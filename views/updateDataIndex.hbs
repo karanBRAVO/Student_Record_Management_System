@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/favicons/updateDataIndex.ico"
+      type="image/x-icon"
+    />
+    <title>Update</title>
+    <link rel="stylesheet" href="/css/updateDataIndex.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="headingContainer">
+          <h1 title="update the fields">Update document</h1>
+        </div>
+        <div class="subheadingContainer">
+            <h4>id: {{data._id}}</h4>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="innerContainer">
+        <form action="/update-requested/{{data._id}}" method="post">
+          <div class="row">
+            <div class="inputContainer">
+              <label for="firstName">first name:</label>
+              <input
+                type="text"
+                name="firstName"
+                id="first_name"
+                placeholder="Abcdef"
+                value="{{data.first_name}}"
+                autocomplete="off"
+              />
+            </div>
+            <div class="inputContainer">
+              <label for="lastName">last name:</label>
+              <input
+                type="text"
+                name="lastName"
+                id="last_name"
+                placeholder="ghijkl"
+                value="{{data.last_name}}"
+                autocomplete="off"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="inputContainer">
+              <label for="rollNumber">roll number:</label>
+              <input
+                type="text"
+                name="rollNumber"
+                id="roll_number"
+                placeholder="UE2280xy..."
+                value="{{data.roll_num}}"
+                autocomplete="off"
+              />
+            </div>
+            <div class="inputContainer">
+              <label for="email">email:</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="abc@gmail.com"
+                value="{{data.email}}"
+                autocomplete="off"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="inputContainer">
+              <label for="matricMarks">matric marks(%):</label>
+              <input
+                type="number"
+                name="matricMarks"
+                id="matric_marks"
+                placeholder="10th marks"
+                value="{{data.matric_marks}}"
+                autocomplete="off"
+              />
+            </div>
+            <div class="inputContainer">
+              <label for="interMarks">inter marks(%):</label>
+              <input
+                type="number"
+                name="interMarks"
+                id="inter_marks"
+                placeholder="12th marks"
+                value="{{data.inter_marks}}"
+                autocomplete="off"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="inputContainer">
+              <label for="mobileNum">mobile number:</label>
+              <input
+                type="tel"
+                name="mobileNum"
+                id="mobile_num"
+                placeholder="000-0000-000"
+                value="{{data.mobile_num}}"
+                autocomplete="off"
+              />
+            </div>
+            <div class="inputContainer">
+              <label for="aadharNumber">aadhar number:</label>
+              <input
+                type="number"
+                name="aadharNumber"
+                id="aadhar_number"
+                placeholder="1234-5678-1234"
+                value="{{data.aadhar_num}}"
+                autocomplete="off"
+              />
+            </div>
+          </div>
+          <div class="buttonContainer">
+            <input type="submit" value="Update" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+
+</html>

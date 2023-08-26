@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: blue;
+    padding: 5px;
+}
+
+.headingContainer,
+.subheadingContainer {
+    padding: 5px;
+    margin: 1px;
+    text-align: center;
+}
+
+.headingContainer h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 3.5em;
+    color: white;
+}
+
+.subheadingContainer h4 {
+    color: white;
+    font-family: serif;
+    text-transform: none;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.container {
+    padding: 5px;
+}
+
+.container .innerContainer {
+    padding: 5px;
+    margin: 1px;
+}
+
+.container .innerContainer form {
+    padding: 2px;
+    margin: 1px;
+}
+
+.container .innerContainer form .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1px;
+    margin: 1px;
+}
+
+.container .innerContainer .inputContainer {
+    padding: 4px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .innerContainer .inputContainer label {
+    padding: 1px;
+    margin: 1px;
+    color: black;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 1.2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container .innerContainer .inputContainer input {
+    outline: none;
+    background-color: transparent;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin: 2px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: blue;
+    box-shadow: 0 0 8px grey;
+}
+
+.container .innerContainer .buttonContainer {
+    padding: 5px;
+    margin: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .innerContainer .buttonContainer input {
+    color: blue;
+    border: 2px solid blue;
+    background-color: white;
+    padding: 5px;
+    border-radius: 4px;
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: 1.3em;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgb(130, 130, 130);
+}
+
+.container .innerContainer .buttonContainer input:hover {
+    color: white;
+    background-color: blue;
+}

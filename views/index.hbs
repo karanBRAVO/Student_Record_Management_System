@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicons/favicon.ico" />
+    <title>Student Record Management System</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <section class="mainContainer">
+      <nav>
+        <div class="headingContainer">
+          <h1>Student Record Management System</h1>
+          <sub>&copy; Karan Yadav 2023</sub>
+        </div>
+      </nav>
+      <div class="innerContainer">
+        <div class="formContainer">
+          <form action="/submitForm" method="post">
+            <div class="subHeadingContainer">
+              <h4>Fill the Form :)</h4>
+            </div>
+            <hr />
+            <div class="inputContainer">
+              <div class="boxContainer">
+                <div class="box">
+                  <label for="firstName">First name:</label>
+                  <input
+                    type="text"
+                    name="firstName"
+                    id="first_name"
+                    placeholder="Abcdef"
+                    autocomplete="off"
+                    required
+                  />
+                </div>
+                <div class="box">
+                  <label for="lastName">last name:</label>
+                  <input
+                    type="text"
+                    name="lastName"
+                    id="last_name"
+                    placeholder="Defghi"
+                    autocomplete="off"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="inputContainer">
+              <div class="boxContainer">
+                <div class="box">
+                  <label for="rollNum">roll number:</label>
+                  <input
+                    type="text"
+                    name="rollNumber"
+                    id="roll_num"
+                    placeholder="UE2280xy"
+                    autocomplete="off"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="inputContainer">
+              <div class="boxContainer">
+                <div class="box">
+                  <label for="matricMarks">matric marks(%):</label>
+                  <input
+                    type="number"
+                    name="matricMarks"
+                    id="matric_marks"
+                    placeholder="matric marks (10th)"
+                    autocomplete="off"
+                    required
+                  />
+                </div>
+                <div class="box">
+                  <label for="interMarks">Inter Marks(%):</label>
+                  <input
+                    type="number"
+                    name="interMarks"
+                    id="inter_marks"
+                    placeholder="inter marks (12th)"
+                    autocomplete="off"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="inputContainer">
+              <div class="boxContainer">
+                <div class="box">
+                  <label for="email">email:</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="abc@example.com"
+                    autocomplete="off"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="inputContainer">
+              <div class="boxContainer">
+                <div class="box">
+                  <label for="telNum">mobile number:</label>
+                  <input
+                    type="number"
+                    name="telNum"
+                    id="tel_num"
+                    placeholder="000-0000-000"
+                    autocomplete="off"
+                    required
+                  />
+                </div>
+                <div class="box">
+                  <label for="aadharNum">aadhar number:</label>
+                  <input
+                    type="number"
+                    name="aadharNum"
+                    id="aadhar_num"
+                    placeholder="1234-5678-0000"
+                    autocomplete="off"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="buttonContainer">
+              <input type="submit" value="submit" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+
+</html>

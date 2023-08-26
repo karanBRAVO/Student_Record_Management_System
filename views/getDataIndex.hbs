@@ -1,0 +1,85 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="favicons/getDataIndex.ico"
+      type="image/x-icon"
+    />
+    <title>Student Record Management System</title>
+    <link rel="stylesheet" href="css/getDataIndex.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="headingContainer">
+          <h1>Student Record Management System</h1>
+          <sub>&copy; Karan Yadav</sub>
+        </div>
+        <div class="buttonContainer">
+          <form action="/get-data" method="get">
+            <input type="submit" value="Get Data" id="getDataBtn" />
+          </form>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="tableContainer">
+        <table>
+          <thead>
+            <tr>
+              <td class="columnName">S.No.</td>
+              <td class="columnName">First Name</td>
+              <td class="columnName">Last Name</td>
+              <td class="columnName">roll num</td>
+              <td class="columnName">matric marks (%)</td>
+              <td class="columnName">inter marks (%)</td>
+              <td class="columnName">email</td>
+              <td class="columnName">mobile number (+91)</td>
+              <td class="columnName">aadhar number</td>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each data}}
+              <tr>
+                <td class="data">{{this._id}}</td>
+                <td class="data">{{this.first_name}}</td>
+                <td class="data">{{this.last_name}}</td>
+                <td class="data">{{this.roll_num}}</td>
+                <td class="data">{{this.matric_marks}}</td>
+                <td class="data">{{this.inter_marks}}</td>
+                <td class="data">{{this.email}}</td>
+                <td class="data">{{this.mobile_num}}</td>
+                <td class="data">{{this.aadhar_num}}</td>
+                <td class="data">
+                  <form action="/update-doc/{{this._id}}" method="get">
+                    <input
+                      type="submit"
+                      class="updateButton"
+                      value="Update"
+                      title="update"
+                    />
+                  </form>
+                  <form
+                    action="/del-doc/{{this._id}}"
+                    method="post"
+                    id="deleteForm"
+                  >
+                    <input
+                      type="submit"
+                      class="delButton"
+                      value="Delete"
+                      title="delete"
+                    />
+                  </form>
+                </td>
+              </tr>
+            {{/each}}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

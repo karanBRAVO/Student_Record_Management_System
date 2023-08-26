@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+}
+
+nav {
+    background-color: goldenrod;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 12px solid black;
+    box-shadow: 0 0 8px goldenrod;
+}
+
+.headingContainer {
+    padding: 5px;
+    margin: 3px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.headingContainer h1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: black;
+    padding: 2px;
+    margin: 2px;
+}
+
+.headingContainer sub {
+    color: black;
+    font-family: sans-serif;
+    font-size: 0.9em;
+    font-weight: 600;
+    padding: 0.6px;
+    margin: 0.6px;
+}
+
+.buttonContainer {
+    padding: 4px;
+    margin: 4px;
+}
+
+.buttonContainer form {
+    padding: 0.5px;
+    margin: 0.5px;
+}
+
+.buttonContainer form input {
+    padding: 5px;
+    margin: 1px;
+    background-color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+    color: goldenrod;
+    border: 2px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.35s;
+}
+
+.buttonContainer form input:hover {
+    background-color: goldenrod;
+    color: black;
+}
+
+.container {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .tableContainer {
+    padding: 5px;
+    margin: 5px;
+}
+
+.tableContainer table {
+    padding: 1px;
+    margin: 1px;
+    border-radius: 4px;
+    border: 2px solid white;
+    background-color: rgb(249, 244, 244);
+    box-shadow: 0 0 10px grey;
+}
+
+.columnName {
+    background-color: rgb(254, 204, 142);
+    color: black;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+    text-transform: capitalize;
+    border: 2px solid rgb(254, 204, 142);
+    border-radius: 7px;
+}
+
+.data {
+    background-color: rgb(254, 251, 251);
+    color: black;
+    text-align: right;
+    padding: 4px;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: none;
+    font-size: 0.8em;
+    font-weight: 600;
+    border: 2px solid white;
+    border-radius: 4px;
+}
+
+.updateButton,
+.delButton {
+    background-color: white;
+    border: 2px solid;
+    border-radius: 3px;
+    padding: 3px 2px;
+    margin: 3px 0;
+    font-family: monospace;
+    font-size: 1.3em;
+    font-weight: 900;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all 0.25s;
+}
+
+.updateButton {
+    color: blue;
+    border-color: blue;
+}
+
+.updateButton:hover {
+    background-color: blue;
+    color: white;
+}
+
+.delButton {
+    color: crimson;
+    border-color: crimson;
+}
+
+.delButton:hover {
+    background-color: crimson;
+    color: white;
+}

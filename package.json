@@ -1,0 +1,16 @@
+{
+  "name": "stdrecordmgmtsystem",
+  "version": "1.0.0",
+  "description": "This is my college project.",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon ./src/app.js"
+  },
+  "author": "karan yadav",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "hbs": "^4.2.0",
+    "mongoose": "^7.0.5"
+  }
+}
